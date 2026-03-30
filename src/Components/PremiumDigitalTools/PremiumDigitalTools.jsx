@@ -22,19 +22,21 @@ const PremiumDigitalTools = ({
           Choose from our curated collection of premium digital products
           designed <br /> to boost your productivity and creativity.
         </p>
-        <div className="text-center ">
-          <button
-            onClick={() => setBtnSelect("products")}
-            className={`btn   ${btnSelect === "products" ? "bg-[#4F39F6] text-white" : "bg-white"} rounded-[999px] font-bold text-[16px`}
-          >
-            Products
-          </button>
-          <button
-            onClick={() => setBtnSelect("cart")}
-            className={`btn ${btnSelect === "cart" ? "bg-[#4F39F6]" : "bg-white"} text-[#25065D] rounded-[999px] font-medium text-[16px] `}
-          >
-            Cart ({selectedCards.length})
-          </button>
+        <div className="text-center">
+          <div className="btn rounded-[999px] w-47 bg-white">
+            <button
+              onClick={() => setBtnSelect("products")}
+              className={`btn   ${btnSelect === "products" ? "bg-[#4F39F6] text-white" : "bg-white"} rounded-[999px] font-bold text-[16px`}
+            >
+              Products
+            </button>
+            <button
+              onClick={() => setBtnSelect("cart")}
+              className={`btn ${btnSelect === "cart" ? "bg-[#4F39F6] text-white" : "bg-white"} text-[#25065D] rounded-[999px] font-medium text-[16px] `}
+            >
+              Cart ({selectedCards.length})
+            </button>
+          </div>
         </div>
       </div>
       {btnSelect === "products" ? (
@@ -50,6 +52,7 @@ const PremiumDigitalTools = ({
           selectedCards={selectedCards}
           setSelectedCards={setSelectedCards}
           count={count}
+          setCount={setCount}
         ></SelectedCards>
       )}
     </div>

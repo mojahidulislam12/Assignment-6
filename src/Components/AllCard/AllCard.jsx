@@ -9,7 +9,7 @@ const AllCard = ({
 }) => {
   //console.log(cards);
   return (
-    <div className="container mx-auto mt-10 mb-10 ">
+    <div className="container mx-auto mt-10 mb-30 ">
       <div className="grid grid-cols-3 gap-7.5">
         {allCard.map((card, index) => (
           <Card

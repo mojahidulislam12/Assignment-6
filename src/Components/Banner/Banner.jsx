@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../../assets/Group 5.png";
 import img2 from "../../assets/Play.png";
 import img3 from "../../assets/banner.png";
-const Banner = ({ count }) => {
+const Banner = () => {
   return (
     <div className="container mx-auto h-190">
       <div className="mt-21.25 flex justify-between">
@@ -21,7 +21,7 @@ const Banner = ({ count }) => {
           </p>
           <div className="mt-8">
             <button className="btn bg-[#4F39F6] font-bold text-4 text-white rounded-[100px]">
-              Explore Products {count}
+              Explore Products
             </button>
             <button className="btn font-bold text-4 ml-4 rounded-[100px] text-[#9514FA] border-[#9514FA]">
               <img src={img2} />

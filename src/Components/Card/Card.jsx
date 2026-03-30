@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import CardFeatured from "../CardFeatured/CardFeatured";
 //import img from "../../assets/design-tool.png";
-
+import { IoIosCheckmark } from "react-icons/io";
 const Card = ({ card, selectedCards, setSelectedCards, count, setCount }) => {
   //console.log(card);
   const { tagType, icon, name, period, price, description, features } = card;
+  const [isSelected, setIsSelected] = useState(false);
   const handleSelectCard = (card) => {
     setSelectedCards([...selectedCards, card]);
     setCount(count + price);
+    setIsSelected(true);
   };
+
   return (
     <div>
       <div className="card bg-base-100 shadow-sm">
@@ -40,9 +43,10 @@ const Card = ({ card, selectedCards, setSelectedCards, count, setCount }) => {
           <div className="">
             <button
               onClick={() => handleSelectCard(card)}
-              className="btn btn-primary font-bold text-[16px] h-13 w-full rounded-[100px]"
+              className={`btn  ${isSelected === true ? "bg-[#5EBB2B] text-white" : "btn-primary"} font-bold text-[16px] h-13 w-full rounded-[100px]`}
+              disabled={isSelected}
             >
-              Buy Now
+              {isSelected === true ? "Add to cart" : "Buy Now"}
             </button>
           </div>
         </div>

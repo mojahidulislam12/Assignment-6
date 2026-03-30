@@ -5,6 +5,7 @@ import AllCard from "./Components/AllCard/AllCard";
 import Banner from "./Components/Banner/Banner";
 import NavBar from "./Components/NaBar/NavBar";
 import PremiumDigitalTools from "./Components/PremiumDigitalTools/PremiumDigitalTools";
+import GetStared from "./Components/GetStared/GetStared";
 const loadData = async () => {
   const res = await fetch("/data.json");
   return res.json();
@@ -31,6 +32,7 @@ function App() {
           setCount={setCount}
         ></PremiumDigitalTools>
       </Suspense>
+      <GetStared></GetStared>
     </>
   );
 }
