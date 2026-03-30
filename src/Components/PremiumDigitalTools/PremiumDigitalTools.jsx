@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const PremiumDigitalTools = () => {
+  const [btnSelect, setBtnSelect] = useState("products");
   return (
     <div className="mt-30">
       <div className="space-y-4">
@@ -11,11 +12,17 @@ const PremiumDigitalTools = () => {
           Choose from our curated collection of premium digital products
           designed <br /> to boost your productivity and creativity.
         </p>
-        <div className="text-center">
-          <button className="btn bg-[#4F39F6] rounded-[999px] font-bold text-[16px] text-white">
+        <div className="text-center ">
+          <button
+            onClick={() => setBtnSelect("products")}
+            className={`btn   ${btnSelect === "products" ? "bg-[#4F39F6] text-white" : "bg-white"} rounded-[999px] font-bold text-[16px`}
+          >
             Products
           </button>
-          <button className="btn text-[#25065D] rounded-[999px] font-medium text-[16px] bg-white">
+          <button
+            onClick={() => setBtnSelect("cart")}
+            className={`btn ${btnSelect === "cart" ? "bg-[#4F39F6]" : "bg-white"} text-[#25065D] rounded-[999px] font-medium text-[16px] `}
+          >
             Cart (2)
           </button>
         </div>
