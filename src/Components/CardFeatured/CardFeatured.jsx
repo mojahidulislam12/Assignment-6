@@ -1,7 +1,7 @@
 import React from "react";
 
 const CardFeatured = ({ feature }) => {
-  console.log(feature);
+  //console.log(feature);
   return (
     <div>
       <li>

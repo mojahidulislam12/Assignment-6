@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Active from "./Components/Active/Active";
 import AllCard from "./Components/AllCard/AllCard";
@@ -9,18 +9,27 @@ const loadData = async () => {
   const res = await fetch("/data.json");
   return res.json();
 };
+
 function App() {
   const allCards = loadData();
+  const [selectedCards, setSelectedCards] = useState([]);
+  const [count, setCount] = useState(0);
   return (
     <>
-      <NavBar></NavBar>
-      <Banner></Banner>
+      <NavBar selectedCards={selectedCards}></NavBar>
+      <Banner count={count}></Banner>
       <Active></Active>
-      <PremiumDigitalTools></PremiumDigitalTools>
+
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
-        <AllCard allCards={allCards}></AllCard>
+        <PremiumDigitalTools
+          allCards={allCards}
+          selectedCards={selectedCards}
+          setSelectedCards={setSelectedCards}
+          count={count}
+          setCount={setCount}
+        ></PremiumDigitalTools>
       </Suspense>
     </>
   );

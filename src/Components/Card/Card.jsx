@@ -1,9 +1,14 @@
 import React from "react";
 import CardFeatured from "../CardFeatured/CardFeatured";
 //import img from "../../assets/design-tool.png";
-const Card = ({ card }) => {
+
+const Card = ({ card, selectedCards, setSelectedCards, count, setCount }) => {
   //console.log(card);
   const { tagType, icon, name, period, price, description, features } = card;
+  const handleSelectCard = (card) => {
+    setSelectedCards([...selectedCards, card]);
+    setCount(count + price);
+  };
   return (
     <div>
       <div className="card bg-base-100 shadow-sm">
@@ -33,7 +38,10 @@ const Card = ({ card }) => {
             ))}
           </ul>
           <div className="">
-            <button className="btn btn-primary font-bold text-[16px] h-13 w-full rounded-[100px]">
+            <button
+              onClick={() => handleSelectCard(card)}
+              className="btn btn-primary font-bold text-[16px] h-13 w-full rounded-[100px]"
+            >
               Buy Now
             </button>
           </div>

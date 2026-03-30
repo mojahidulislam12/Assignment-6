@@ -1,7 +1,17 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
+import AllCard from "../AllCard/AllCard";
+import SelectedCards from "../SelectedCards/SelectedCards";
 
-const PremiumDigitalTools = () => {
+const PremiumDigitalTools = ({
+  allCards,
+  selectedCards,
+  setSelectedCards,
+  count,
+  setCount,
+}) => {
+  const allCard = use(allCards);
   const [btnSelect, setBtnSelect] = useState("products");
+
   return (
     <div className="mt-30">
       <div className="space-y-4">
@@ -23,10 +33,25 @@ const PremiumDigitalTools = () => {
             onClick={() => setBtnSelect("cart")}
             className={`btn ${btnSelect === "cart" ? "bg-[#4F39F6]" : "bg-white"} text-[#25065D] rounded-[999px] font-medium text-[16px] `}
           >
-            Cart (2)
+            Cart ({selectedCards.length})
           </button>
         </div>
       </div>
+      {btnSelect === "products" ? (
+        <AllCard
+          allCard={allCard}
+          selectedCards={selectedCards}
+          setSelectedCards={setSelectedCards}
+          count={count}
+          setCount={setCount}
+        ></AllCard>
+      ) : (
+        <SelectedCards
+          selectedCards={selectedCards}
+          setSelectedCards={setSelectedCards}
+          count={count}
+        ></SelectedCards>
+      )}
     </div>
   );
 };

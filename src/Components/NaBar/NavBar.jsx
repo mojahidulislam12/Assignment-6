@@ -1,7 +1,7 @@
 import React from "react";
 import img1 from "../../assets/DigiTools.png";
 import { CiShoppingCart } from "react-icons/ci";
-const NavBar = () => {
+const NavBar = ({ selectedCards }) => {
   return (
     <div>
       <div className="flex justify-around items-center navbar bg-base-100 shadow-sm">
@@ -18,9 +18,13 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="flex justify-between items-center gap-4 font-semibold text-4">
-          <a href="">
-            <CiShoppingCart />
-          </a>
+          <a href=""></a>
+          <div className="indicator">
+            <CiShoppingCart className="w-5 h-8" />
+            <span className=" badge-sm indicator-item">
+              {selectedCards.length}
+            </span>
+          </div>
           <a>Login</a>
           <a className="btn rounded-[10000px] bg-[#4F39F6] text-white">
             Get Started
