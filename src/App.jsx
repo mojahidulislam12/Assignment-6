@@ -6,6 +6,7 @@ import Banner from "./Components/Banner/Banner";
 import NavBar from "./Components/NaBar/NavBar";
 import PremiumDigitalTools from "./Components/PremiumDigitalTools/PremiumDigitalTools";
 import GetStared from "./Components/GetStared/GetStared";
+import Pricing from "./Components/Pricing/Pricing";
 const loadData = async () => {
   const res = await fetch("/data.json");
   return res.json();
@@ -33,6 +34,7 @@ function App() {
         ></PremiumDigitalTools>
       </Suspense>
       <GetStared></GetStared>
+      <Pricing></Pricing>
     </>
   );
 }
