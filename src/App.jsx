@@ -8,6 +8,7 @@ import PremiumDigitalTools from "./Components/PremiumDigitalTools/PremiumDigital
 import GetStared from "./Components/GetStared/GetStared";
 import Pricing from "./Components/Pricing/Pricing";
 import WorkFlow from "./Components/WorkFlow/WorkFlow";
+import Footer from "./Components/Footer/Footer";
 const loadData = async () => {
   const res = await fetch("/data.json");
   return res.json();
@@ -37,6 +38,7 @@ function App() {
       <GetStared></GetStared>
       <Pricing></Pricing>
       <WorkFlow></WorkFlow>
+      <Footer></Footer>
     </>
   );
 }
