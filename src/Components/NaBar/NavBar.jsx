@@ -6,7 +6,7 @@ const NavBar = ({ selectedCards }) => {
   const [open, setOpen] = useState();
   return (
     <div className="">
-      <div className="flex lg:inline lg:w-full justify-around  items-center navbar bg-base-100 shadow-sm">
+      <div className="flex justify-around  items-center navbar bg-base-100 shadow-sm ">
         <span
           onClick={() => setOpen(!open)}
           className="flex justify-center items-center gap-5"
