@@ -2,8 +2,8 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className=" hidden ">
-      <div className="py-30 container mx-auto">
+    <div className="">
+      <div className="py-10 md:py-30 container mx-auto">
         <div className="text-center mb-10">
           <h1 className="font-extrabold text-[48px]">
             Simple, Transparent Pricing
@@ -12,19 +12,21 @@ const Pricing = () => {
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8 space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 space-y-4">
           <div className="card   h-112 bg-[#F2F2F2] card-lg shadow-sm">
             <div className="card-body">
               <div className="">
-                <h2 className="text-[24px] font-bold">Starter</h2>
-                <p className="font-normal text-[16px] text-[#627382]">
+                <h2 className="text-center md:text-left text-[24px] font-bold">
+                  Starter
+                </h2>
+                <p className="text-center md:text-left font-normal text-[16px] text-[#627382]">
                   Perfect for getting started
                 </p>
               </div>
-              <div className=" font-bold text-[40px]">
-                <span className="text-xl">$0/month</span>
+              <div className="text-center md:text-left font-bold text-[40px]">
+                <span className=" text-xl">$0/month</span>
               </div>
-              <ul className="mt-6 flex flex-col gap-2 text-xs">
+              <ul className="text-center md:text-left mt-6 flex flex-col gap-2 text-xs">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -138,15 +140,17 @@ const Pricing = () => {
           <div className="card   h-112 bg-[#4F39F6] card-lg shadow-sm text-white">
             <div className="card-body p-6">
               <div className="">
-                <h2 className="text-[24px] font-bold">Pro</h2>
-                <p className="font-normal text-[16px] text-white">
+                <h2 className="text-[24px] font-bold text-center md:text-left">
+                  Pro
+                </h2>
+                <p className="font-normal text-[16px] text-white text-center md:text-left">
                   Best for professionals
                 </p>
               </div>
-              <div className="font-bold text-[40px]">
+              <div className="font-bold text-[40px] text-center md:text-left">
                 <span className="text-xl">$29/month</span>
               </div>
-              <ul className="mt-6 flex flex-col gap-2 text-xs">
+              <ul className="mt-6 flex flex-col gap-2 text-xs text-center md:text-left">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -260,15 +264,17 @@ const Pricing = () => {
           <div className="card   h-112 bg-[#F2F2F2] card-lg shadow-sm">
             <div className="card-body p-6">
               <div className="">
-                <h2 className="text-[24px] font-bold">Enterprise</h2>
-                <p className="font-normal text-[16px] text-[#627382]">
+                <h2 className="text-[24px] font-bold text-center md:text-left">
+                  Enterprise
+                </h2>
+                <p className="font-normal text-[16px] text-[#627382] text-center md:text-left">
                   For teams and businesses
                 </p>
               </div>
-              <div className="font-bold text-[40px]">
+              <div className="font-bold text-[40px] text-center md:text-left">
                 <span className="text-xl">$99/month</span>
               </div>
-              <ul className="mt-6 flex flex-col gap-2 text-xs">
+              <ul className="mt-6 flex flex-col gap-2 text-xs text-center md:text-left">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
