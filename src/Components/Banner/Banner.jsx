@@ -5,7 +5,7 @@ import img3 from "../../assets/banner.png";
 const Banner = () => {
   return (
     <div className="container mx-auto h-190">
-      <div className="-mt-10  mb-10 md:mt-21.25 -flex-row-reverse md:flex justify-between ">
+      <div className="-mt-10  mb-10 md:mt-21.25 -flex-row-reverse md:flex justify-around ">
         <div className="w-full">
           <button className="btn bg-[#E1E7FF] text-[#9514FA] rounded-[1000px] font-medium text-4 mt-20 md:mt-24.25">
             <img src={img1} alt="" srcset="" />
