@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const SelectCard = ({
   card,
@@ -12,6 +13,7 @@ const SelectCard = ({
   const handleDeletedCard = () => {
     const filtered = selectedCards.filter((cards) => cards.name != card.name);
     setSelectedCards(filtered);
+    toast.error("Card are Deleted");
     setCount(count - price);
   };
   return (

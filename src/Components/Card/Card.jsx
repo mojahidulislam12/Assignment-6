@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import CardFeatured from "../CardFeatured/CardFeatured";
 //import img from "../../assets/design-tool.png";
 import { IoIosCheckmark } from "react-icons/io";
+import { toast } from "react-toastify";
 const Card = ({ card, selectedCards, setSelectedCards, count, setCount }) => {
   //console.log(card);
   const { tagType, icon, name, period, price, description, features } = card;
   const [isSelected, setIsSelected] = useState(false);
   const handleSelectCard = (card) => {
     setSelectedCards([...selectedCards, card]);
+    toast.success("Card is Successfully Added");
     setCount(count + price);
     setIsSelected(true);
   };

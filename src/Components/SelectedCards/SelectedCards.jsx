@@ -1,5 +1,6 @@
 import { ShoppingCart } from "lucide-react";
 import SelectCard from "../SelectCard/SelectCard";
+import { toast } from "react-toastify";
 
 const SelectedCards = ({
   selectedCards,
@@ -14,6 +15,7 @@ const SelectedCards = ({
 
   const handleDeleteAll = () => {
     setSelectedCards([]);
+    toast.success("Products are successful purchase");
     setCount(0);
   };
   return (
