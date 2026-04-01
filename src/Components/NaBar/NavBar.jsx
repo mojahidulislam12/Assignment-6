@@ -6,17 +6,17 @@ const NavBar = ({ selectedCards }) => {
   const [open, setOpen] = useState();
   return (
     <div className="">
-      <div className="flex justify-around items-center navbar bg-base-100 shadow-sm">
+      <div className="flex lg:inline lg:w-full justify-around  items-center navbar bg-base-100 shadow-sm">
         <span
           onClick={() => setOpen(!open)}
           className="flex justify-center items-center gap-5"
         >
           {open === true ? (
-            <X className="md:hidden"></X>
+            <X className="md:hidden lg:hidden"></X>
           ) : (
             <Menu className="md:hidden"></Menu>
           )}
-          <img src={img1} className="ml-9" alt="" />
+          <img src={img1} className="lg:ml-9 md:5" alt="" />
           <ul
             className={`md:hidden absolute duration-1000 p-3
             ${open ? "top-16" : "-top-40"}

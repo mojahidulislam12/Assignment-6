@@ -13,14 +13,14 @@ const Footer = () => {
             businesses. Work smarter <br /> with our suite of powerful tools.
           </p>
         </div>
-        <div className="ml-30">
+        <div className="md:ml-30 ml-4">
           <h1 className="font-medium text-[20px] opacity-80 mb-4">Product</h1>
           <p className="opacity-80">
             Features <br /> Pricing <br />
             Templates <br /> Integrations
           </p>
         </div>
-        <div className="ml-30">
+        <div className="md:ml-30 ml-4">
           <h1 className="font-medium text-[20px] opacity-80 mb-4">Company</h1>
           <p className="opacity-80">
             About
@@ -29,7 +29,7 @@ const Footer = () => {
             <br /> Press
           </p>
         </div>
-        <div className="ml-30">
+        <div className="md:ml-30 ml-4">
           <h1 className="font-medium text-[20px] opacity-80 mb-4">Resources</h1>
           <p className="opacity-80">
             Documentation
@@ -37,7 +37,7 @@ const Footer = () => {
             <br /> Center <br /> Community <br /> Contact
           </p>
         </div>
-        <div className="ml-50 ">
+        <div className="md:ml-50 ml-5">
           <h1 className="font-medium text-[20px] opacity-80 mb-4">
             Social Links
           </h1>

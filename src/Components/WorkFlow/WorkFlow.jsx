@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkFlow = () => {
   return (
-    <div className="bg-[#4F39F6]">
+    <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
       <div className="py-10 md:py-30">
         <div className="">
           <h1 className="text-center font-extrabold text-[30px] md:text-[40px] text-[#FFFFFF]">

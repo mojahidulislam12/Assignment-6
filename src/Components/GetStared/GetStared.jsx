@@ -5,7 +5,7 @@ import img3 from "../../assets/rocket.png";
 const GetStared = () => {
   return (
     <div className=" bg-[#F1F1F1]">
-      <div className="py-10 md:py-30 container mx-auto">
+      <div className="py-20 md:py-30 container mx-auto">
         <div className="text-center  mb-10">
           <h1 className="font-extrabold text-[40px] md:text-[48px] -mt-20 md:mt-0">
             Get Started in 3 Steps
@@ -14,8 +14,8 @@ const GetStared = () => {
             Start using premium digital tools in minutes, not hours.
           </p>
         </div>
-        <div className="grid grid-cols-1  md:grid-cols-3 gap-8 space-y-4">
-          <div className="card w-full md:w-120  h-80   bg-base-100 card-lg shadow-sm">
+        <div className="grid grid-cols-1 lg:grid-cols-3  md:grid-cols-2 gap-8 space-y-4">
+          <div className="card w-full lg:w-120 md:w-w-93  h-80   bg-base-100 card-lg shadow-sm">
             <div className="card-body">
               <div className="flex justify-end">
                 <div className="text-center   items-center">
@@ -36,7 +36,7 @@ const GetStared = () => {
               </div>
             </div>
           </div>
-          <div className="card w-full md:w-120 h-80 bg-base-100 card-lg shadow-sm">
+          <div className="card w-full lg:w-120 md:w-w-93 h-80 bg-base-100 card-lg shadow-sm">
             <div className="card-body">
               <div className="flex justify-end">
                 <div className="text-center   items-center">
@@ -57,7 +57,7 @@ const GetStared = () => {
               </div>
             </div>
           </div>
-          <div className="card w-full md:w-120 h-80 bg-base-100 card-lg shadow-sm">
+          <div className="card w-full lg:w-120 md:w-93 h-80 bg-base-100 card-lg shadow-sm">
             <div className="card-body">
               <div className="flex justify-end">
                 <div className="text-center   items-center">

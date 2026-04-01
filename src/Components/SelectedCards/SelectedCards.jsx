@@ -1,3 +1,4 @@
+import { ShoppingCart } from "lucide-react";
 import SelectCard from "../SelectCard/SelectCard";
 
 const SelectedCards = ({
@@ -18,9 +19,11 @@ const SelectedCards = ({
   return (
     <div>
       {selectedCards.length === 0 ? (
-        <div className="container mx-auto rounded-md mt-10  h-100 flex justify-center items-center flex-col gap-4 border-1 ">
-          <h2 className="font-bold text-xl">No players selected yet</h2>
-          <p>Go to Available tab to select players</p>
+        <div className="container mx-auto rounded-md mt-10 mb-10  h-100 flex justify-center items-center flex-col gap-4 border-1 ">
+          <h2 className="font-bold text-xl">
+            <ShoppingCart />
+          </h2>
+          <p>Your cart is empty</p>
         </div>
       ) : (
         <div className="card container mx-auto mt-10 mb-10 bg-base-100 shadow-sm px-15 space-y-6">
