@@ -4,7 +4,7 @@ import img2 from "../../assets/package.png";
 import img3 from "../../assets/rocket.png";
 const GetStared = () => {
   return (
-    <div className=" bg-[#F1F1F1] ">
+    <div className=" bg-[#F1F1F1] hidden">
       <div className="py-30 container mx-auto">
         <div className="text-center mb-10">
           <h1 className="font-extrabold text-[48px]">Get Started in 3 Steps</h1>
@@ -12,7 +12,7 @@ const GetStared = () => {
             Start using premium digital tools in minutes, not hours.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8 space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-4">
           <div className="card w-120  h-80   bg-base-100 card-lg shadow-sm">
             <div className="card-body">
               <div className="flex justify-end">

@@ -13,7 +13,7 @@ const PremiumDigitalTools = ({
   const [btnSelect, setBtnSelect] = useState("products");
 
   return (
-    <div className="mt-30">
+    <div className="mt-30 hidden">
       <div className="space-y-4">
         <h1 className="text-center font-extrabold text-[48px] text-[#001931]">
           Premium Digital Tools

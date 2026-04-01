@@ -2,7 +2,7 @@ import React from "react";
 
 const Active = () => {
   return (
-    <div className="bg-[#4F39F6] h-61.75 text-white ">
+    <div className="bg-[#4F39F6] h-61.75 text-white hidden">
       <div className="container mx-auto flex justify-around items-center  ml-50">
         <div className="my-15">
           <h1 className="font-extrabold text-[60px]">50K+</h1>

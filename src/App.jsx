@@ -18,10 +18,11 @@ function App() {
   const allCards = loadData();
   const [selectedCards, setSelectedCards] = useState([]);
   const [count, setCount] = useState(0);
+  console.log(count);
   return (
     <>
       <NavBar selectedCards={selectedCards}></NavBar>
-      <Banner count={count}></Banner>
+      <Banner></Banner>
       <Active></Active>
 
       <Suspense

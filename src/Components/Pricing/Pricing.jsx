@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className=" ">
+    <div className=" hidden ">
       <div className="py-30 container mx-auto">
         <div className="text-center mb-10">
           <h1 className="font-extrabold text-[48px]">

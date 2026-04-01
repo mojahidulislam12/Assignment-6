@@ -4,7 +4,7 @@ import img2 from "../../assets/Play.png";
 import img3 from "../../assets/banner.png";
 const Banner = () => {
   return (
-    <div className="container mx-auto h-190">
+    <div className="container mx-auto h-190 hidden">
       <div className="mt-21.25 flex justify-between">
         <div>
           <button className="btn bg-[#E1E7FF] text-[#9514FA] rounded-[1000px] font-medium text-4 mt-24.25">
