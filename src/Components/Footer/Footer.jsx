@@ -4,8 +4,8 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <div className="bg-[#101727] hidden">
-      <footer className="text-white grid grid-cols-5 container mx-auto pt-30 pb-10">
+    <div className="bg-[#101727]">
+      <footer className="text-white grid grid-cols-5 container mx-auto pt-10 md:pt-30 pb-10">
         <div className="text-white ">
           <img className="mb-4" src={img} alt="" />
           <p className="font-normal text-[16px] opacity-80 mt-4">
@@ -13,14 +13,14 @@ const Footer = () => {
             businesses. Work smarter <br /> with our suite of powerful tools.
           </p>
         </div>
-        <div className="">
+        <div className="ml-30">
           <h1 className="font-medium text-[20px] opacity-80 mb-4">Product</h1>
           <p className="opacity-80">
             Features <br /> Pricing <br />
             Templates <br /> Integrations
           </p>
         </div>
-        <div className="">
+        <div className="ml-30">
           <h1 className="font-medium text-[20px] opacity-80 mb-4">Company</h1>
           <p className="opacity-80">
             About
@@ -29,7 +29,7 @@ const Footer = () => {
             <br /> Press
           </p>
         </div>
-        <div className="">
+        <div className="ml-30">
           <h1 className="font-medium text-[20px] opacity-80 mb-4">Resources</h1>
           <p className="opacity-80">
             Documentation

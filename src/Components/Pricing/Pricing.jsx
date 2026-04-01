@@ -5,7 +5,7 @@ const Pricing = () => {
     <div className="">
       <div className="py-10 md:py-30 container mx-auto">
         <div className="text-center mb-10">
-          <h1 className="font-extrabold text-[48px]">
+          <h1 className="font-extrabold text-[40px] md:text-[48px]">
             Simple, Transparent Pricing
           </h1>
           <p className="font-normal text-[16px] text-[#627382]">

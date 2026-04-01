@@ -15,7 +15,7 @@ const PremiumDigitalTools = ({
   return (
     <div className="mt-30">
       <div className="space-y-4">
-        <h1 className="text-center font-extrabold text-[48px] text-[#001931]">
+        <h1 className="text-center font-extrabold md:mt-0 mt-10 text-[40px] md:text-[48px] text-[#001931]">
           Premium Digital Tools
         </h1>
         <p className="text-center font-normal text-[16px] text-[#627382]">

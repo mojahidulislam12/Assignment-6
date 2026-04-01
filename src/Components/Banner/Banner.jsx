@@ -11,10 +11,10 @@ const Banner = () => {
             <img src={img1} alt="" srcset="" />
             New: AI-Powered Tools Available
           </button>
-          <p className="font-extrabold text-[50px] md:text-[72px] mt-4">
+          <p className="font-extrabold text-[40px] md:text-[72px] mt-4">
             Supercharge Your
           </p>
-          <p className="font-extrabold text-[50px] md:text-[72px]">
+          <p className="font-extrabold text-[40px] md:text-[72px]">
             Digital Workflow
           </p>
           <p className="font-normal text-[18px] mt-4">
