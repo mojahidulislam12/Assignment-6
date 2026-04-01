@@ -26,7 +26,7 @@ const PremiumDigitalTools = ({
           <div className="btn rounded-[999px] w-47 bg-white">
             <button
               onClick={() => setBtnSelect("products")}
-              className={`btn   ${btnSelect === "products" ? "bg-[#4F39F6] text-white" : "bg-white"} rounded-[999px] font-bold text-[16px`}
+              className={`btn   ${btnSelect === "products" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-white"} rounded-[999px] font-bold text-[16px`}
             >
               Products
             </button>

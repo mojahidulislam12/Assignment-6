@@ -24,7 +24,7 @@ const Banner = () => {
             Explore Products
           </p>
           <div className="mt-8">
-            <button className="btn bg-[#4F39F6] font-bold text-4 text-white rounded-[100px]">
+            <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-bold text-4 text-white rounded-[100px]">
               Explore Products
             </button>
             <button className="btn font-bold text-4 ml-4 rounded-[100px] text-[#9514FA] border-[#9514FA]">

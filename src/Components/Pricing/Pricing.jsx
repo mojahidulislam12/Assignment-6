@@ -131,13 +131,13 @@ const Pricing = () => {
                 </li>
               </ul>
               <div className="mt-6">
-                <button className="btn btn-primary btn-block h-13 rounded-[100px] text-[16px] font-bold">
+                <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block h-13 rounded-[100px] text-[16px] font-bold">
                   Get Started Free
                 </button>
               </div>
             </div>
           </div>
-          <div className="card   h-112 bg-[#4F39F6] card-lg shadow-sm text-white">
+          <div className="card   h-112 bg-linear-to-r from-[#4F39F6] to-[#9514FA] card-lg shadow-sm text-white">
             <div className="card-body p-6">
               <div className="">
                 <h2 className="text-[24px] font-bold text-center md:text-left">
@@ -379,7 +379,7 @@ const Pricing = () => {
                 </li>
               </ul>
               <div className="mt-6">
-                <button className="btn btn-primary text-[16px] font-bold btn-block h-13 rounded-[100px]">
+                <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-[16px] font-bold btn-block h-13 rounded-[100px]">
                   Contact Sales
                 </button>
               </div>

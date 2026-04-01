@@ -43,7 +43,7 @@ const Card = ({ card, selectedCards, setSelectedCards, count, setCount }) => {
           <div className="">
             <button
               onClick={() => handleSelectCard(card)}
-              className={`btn  ${isSelected === true ? "bg-[#5EBB2B] text-white" : "btn-primary"} font-bold text-[16px] h-13 w-full rounded-[100px]`}
+              className={`btn  ${isSelected === true ? "bg-[#5EBB2B] text-white" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"} font-bold text-[16px] h-13 w-full rounded-[100px]`}
               disabled={isSelected}
             >
               {isSelected === true ? "Add to cart" : "Buy Now"}
