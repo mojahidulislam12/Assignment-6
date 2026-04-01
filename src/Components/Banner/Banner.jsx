@@ -4,15 +4,19 @@ import img2 from "../../assets/Play.png";
 import img3 from "../../assets/banner.png";
 const Banner = () => {
   return (
-    <div className="container mx-auto h-190 hidden">
-      <div className="mt-21.25 flex justify-between">
-        <div>
-          <button className="btn bg-[#E1E7FF] text-[#9514FA] rounded-[1000px] font-medium text-4 mt-24.25">
+    <div className="container mx-auto h-190">
+      <div className="-mt-10 mb-10 md:mt-21.25 -flex-row-reverse md:flex justify-between ">
+        <div className="w-full">
+          <button className="btn bg-[#E1E7FF] text-[#9514FA] rounded-[1000px] font-medium text-4 mt-20 md:mt-24.25">
             <img src={img1} alt="" srcset="" />
             New: AI-Powered Tools Available
           </button>
-          <p className="font-extrabold text-[72px] mt-4">Supercharge Your</p>
-          <p className="font-extrabold text-[72px]">Digital Workflow</p>
+          <p className="font-extrabold text-[50px] md:text-[72px] mt-4">
+            Supercharge Your
+          </p>
+          <p className="font-extrabold text-[50px] md:text-[72px]">
+            Digital Workflow
+          </p>
           <p className="font-normal text-[18px] mt-4">
             Access premium AI tools, design assets, templates, and productivity{" "}
             <br />
@@ -29,8 +33,8 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div>
-          <img src={img3} />
+        <div className="mt-6  md:mt-0 md:w-100%">
+          <img className="w-full md:w-250" src={img3} />
         </div>
       </div>
     </div>

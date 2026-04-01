@@ -16,7 +16,7 @@ const NavBar = ({ selectedCards }) => {
           ) : (
             <Menu className="md:hidden"></Menu>
           )}
-          <img src={img1} alt="" />
+          <img src={img1} className="ml-9" alt="" />
           <ul
             className={`md:hidden absolute duration-1000 p-3
             ${open ? "top-16" : "-top-40"}
@@ -50,7 +50,7 @@ const NavBar = ({ selectedCards }) => {
             </span>
           </div>
           <a>Login</a>
-          <a className="btn rounded-[10000px] bg-[#4F39F6] text-white">
+          <a className="btn rounded-[10000px] bg-[#4F39F6] text-white mr-9">
             Get Started
           </a>
         </div>
